@@ -1,0 +1,17 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+
+//int main()
+//{
+//	int i, j;
+//	//金字塔形 循环九次
+//	for (i = 1; i <= 9; i++)
+//	{
+//		for (j = 1; j <= i; j++)
+//		{
+//			printf("%d*%d=%d\t", j, i, i * j);
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
