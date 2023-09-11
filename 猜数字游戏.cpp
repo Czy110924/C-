@@ -25,8 +25,28 @@ void game()
 	//rand（）本身输出一串随机数，但不变，因为srand()没有变化
 	//把每次进入文件的时间戳给srand（）这样每次打开文件的时候
 	//都能用rand（）输出一串与上次不一样的随机数
-	int ret = rand();
-	printf("%d\n", ret);
+	//取值要0~100，%100取值是0~99，再加一就是1~100
+	int ret = rand()%100 + 1;
+	//printf("%d\n", ret);
+	int guess = 0;
+	while(1)
+	{
+		printf("猜数字\n");
+		scanf("%d", &guess);
+		if (guess < ret)
+		{
+			printf("猜小了");
+		}
+		else if (guess > ret)
+		{
+			printf("猜大了");
+		}
+		else if (guess == ret)
+		{
+			printf("猜对了\n");
+			break;
+		}
+	}
 }
 
 int main()
