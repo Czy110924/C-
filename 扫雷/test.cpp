@@ -25,9 +25,15 @@ void game()
 	IntBoard(show, ROWS, COLS, '*');
 
 	//棋盘打印
-	DisPlayboard(mine, ROW, COL);
-	DisPlayboard(show, ROW, COL);
+	//DisPlayboard(mine, ROW, COL);//存放布置好的雷的信息
+	DisPlayboard(show, ROW, COL);//存放排查好的雷的信息
 
+	//布置雷
+	SetMine(mine, ROW, COL);
+	DisPlayboard(mine, ROW, COL);//存放布置好的雷的信息
+
+	//排除雷
+	FindMine(mine, show, ROW, COL);
 
 
 }
@@ -36,6 +42,7 @@ void game()
 int main()
 {
 	int input = 0;
+	srand((unsigned int)time(NULL));
 	do
 	{
 		menu();

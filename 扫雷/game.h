@@ -1,5 +1,9 @@
 #pragma once
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define easecount 10
 
 #define ROW 9
 #define COL 9
@@ -13,7 +17,11 @@ void IntBoard(char board[ROWS][COLS], int rows, int cols, char set);
 //∆Â≈Ã¥Ú”°
 void DisPlayboard(char board0[ROWS][COLS], int row, int col);
 
+//≤º÷√¿◊
+void SetMine(char mine[ROWS][COLS], int row, int col);
 
+//≈≈≤È¿◊
+void FindMine(char mine[ROWS][COLS], char show[ROWS][COLS], int row, int col);
 
 
 
