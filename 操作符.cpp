@@ -109,6 +109,9 @@ int main()
 	// struck book * pb = &b
     //    .     b.name
 	//    ->    pb->name  结构体指针->成员名
+
+
+	//隐式类型整型提升  截断  高位补1补0  原反补
  
 
 
