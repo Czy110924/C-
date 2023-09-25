@@ -47,6 +47,12 @@ int main()
 	//		}
 	//		return start - str;
 	// 
+	// ¶ş¼¶Ö¸Õë
+	// int a = 10;
+	// int * pa = a;
+	// int* * ppa = pa;
+	// **ppa = a = 10
+	// 
 	// arr[2] == 2[arr] == *(arr+2)
 	// 
 	// 
